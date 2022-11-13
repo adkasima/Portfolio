@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --c-purple: #9256f7;
+    --c-purple-light: #9f6ff3;
+    --c-gray: rgb(128, 128, 128);
+    --c-gray-light: rgb(219, 207, 207);
+}
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+li, a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--c-gray);
+    transition: 0.5s;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+span {
+    color: var(--c-purple);
+}
+
+a:hover {
+    color: white;
+}
+
+.content {
+    width: auto;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+header {
+    width: 100%;
+    height: 8rem;
+    position: fixed;
+    background-color: black;
+    position: fixed;
+    padding: 2rem;
+    z-index: 1;
+    
+    -webkit-box-shadow: 0px 1px 50px 3px rgba(146,86,247,0.85); 
+box-shadow: 0px 1px 50px 3px rgba(146,86,247,0.85);
+}
+
+header img {
+    width: 10rem;
+
+}
+
+
+nav ul {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    padding: 20rem;
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+    
+    background: url(img/background.gif) no-repeat fixed; 
+    background-color: #472b74;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(img/background.gif);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+
+#home .desc {
+    text-align: center;
+    padding: 2.4rem;
+
+    border-left: 1px solid var(--c-gray);
+    animation: increase 1s 0.5s backwards;
+
+}
+
+
+#home img {
+    width: 30rem;
+    border-radius: 50%;
+    
+}
+
+#home h1 {
+    animation: leftright 1s 1.5s backwards;
+    color: white;
+}
+
+#home h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    animation: rightleft 1s 1s backwards;
+    color: white;
+}
+
+#home h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    animation: rightleft 1s 2s backwards;
+    color: white;
+}
+
+
+#home button, #home button a {
+    color: white;
+    background-color: var(--c-purple);
+    border-radius: 2rem;
+    width: 18rem;
+    padding: 1.6rem;
+    border: none;
+    margin-top: 4rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+
+    animation: downtop 1s 2s backwards;
+    transition: 0.5s;
+}
+
+#home button:hover{
+    filter: brightness(1.2);
+}
+
+#about-me {
+    padding: 0 10rem;
+    height: 50rem; 
+
+}
+
+#about-me h2 {
+    color: var(--c-purple);
+    text-align: center;
+    padding-top: 10rem;
+    margin-bottom: 4rem;
+}
+
+#about-me p {
+    font-size: 1.6rem;
+    color: black;
+}
+
+.social-links {
+    justify-content: center;
+    display: flex;
+    gap: 4rem;
+}
+
+.social-links img {
+    width: 5rem;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+   
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30rem;
+    padding: 10rem 10rem;
+
+    background: url(img/cyberpunk.gif) no-repeat fixed; 
+    background-color: #472b74;
+    background-image: linear-gradient(rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.5)), url(img/cyberpunk.gif);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#projects .p-cards {
+    justify-content: center;
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+#projects .p-card {
+    max-width: 35rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--c-purple);
+
+    padding: 1rem;
+    border-radius: 0 3rem 0 3rem;
+}
+
+#projects .p-card h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+}
+
+#projects.p-card a {
+    font-size: 1.2rem;
+}
+
+
+#projects .p-card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#projects .p-card img {
+    width: 20rem;
+    margin-bottom: 2.4rem;
+    border-radius: 2rem;
+}
+
+#projects h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+@keyframes leftright {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes rightleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(45px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes increase {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
