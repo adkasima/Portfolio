@@ -7,7 +7,7 @@
 :root {
     font-size: 62.5%;
     --purple-color: #9256f7;
-    --purple-light: #9f6ff3;
+    --purple-light: #e4bcf7;
 
     --gray-color: rgb(128, 128, 128);
     --gray-light: rgb(219, 207, 207);
@@ -15,13 +15,21 @@
     --yellow-color: #fcee09; 
     --red-color: #ff003c;
     --black-color: #050a0e;
-    --blue-color: #00f0ff;
+    --blue-color: #05868f;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+}
+
+.fa-star {
+    color: rgb(43, 43, 43);
+}
+
+.checked {
+    color: red;
 }
 
 body, html {
@@ -54,17 +62,17 @@ span {
 }
 
 nav ul li a:hover {
-    color: white;
-
-    text-shadow:
-    0 0 7px var(--purple-color),
-    0 0 10px var(--purple-color),
-    0 0 21px var(--purple-color),
-    0 0 42px #0fa,
-    0 0 82px #0fa,
-    0 0 92px #0fa,
-    0 0 102px #0fa,
-    0 0 151px #0fa;
+    color: #fff;
+    /* text-shadow:
+      0 0 5px #fff,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #0ff,
+      0 0 80px #0ff,
+      0 0 90px #0ff,
+      0 0 100px #0ff,
+      0 0 150px #0ff; */
+      animation: glow 1s ease-in-out infinite alternate;
 }
 
 a:hover {
@@ -82,7 +90,7 @@ header {
     width: 100%;
     height: 8rem;
     position: fixed;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     position: fixed;
     padding: 2rem;
     z-index: 1;
@@ -111,7 +119,7 @@ nav ul {
     
     background: url(../img/background.gif) no-repeat fixed; 
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.5)), url(../img/background.gif);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -158,8 +166,8 @@ nav ul {
 
 
 #about-me {
+    background-color: var(--purple-light);
     padding: 0 10rem;
-    height: 50rem; 
 
 }
 
@@ -176,26 +184,28 @@ nav ul {
 }
 
 .social-links {
-    justify-content: center;
+    margin-top: 5rem;
+    border-top: 1px solid var(--purple-color);
+    
+}
+
+.social-links .buttons {
     display: flex;
     gap: 4rem;
+    justify-content: center;
+    margin-bottom: 14rem;
 }
 
 .social-links img {
     width: 5rem;
 }
 
-.social-links img:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
-   
-}
 
 #projects {
     display: flex;
     flex-direction: column;
+    gap: 5rem;
     align-items: center;
-    margin-top: 30rem;
     padding: 10rem 10rem;
 
     background: url(../img/cyberpunk.gif) no-repeat fixed; 
@@ -209,26 +219,40 @@ nav ul {
 
 }
 
+#projects h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
 #projects .p-cards {
     justify-content: center;
     display: flex;
-    gap: 4rem;
+    gap: 6rem;
     margin-bottom: 3rem;
 }
 
 #projects .p-card {
-    max-width: 35rem;
-    height: auto;
     display: flex;
     flex-direction: column;
-    border: 2px solid var(--purple-color);
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+    border: 3px solid var(--purple-color);
     border-radius: 0 3rem 0 3rem;
 
-    background-color: rgba(106, 30, 116, 0.5);
+    background-color: rgb(29, 29, 29);
 
-    padding: 1rem;
 
     animation: rainbow 5s infinite alternate;
+}
+
+#projects .p-card img {
+    border: 1px solid black;
+    width: 20rem;
+    margin-bottom: 1.6rem;
+    border-radius: 0 3rem 0 0;
 }
 
 #projects .p-card h3 {
@@ -237,8 +261,8 @@ nav ul {
     color: white;
 }
 
-#projects.p-card a {
-    font-size: 1.2rem;
+#projects .p-card a + a {
+    margin-bottom: 2rem;
 }
 
 
@@ -247,18 +271,79 @@ nav ul {
     transition: 0.5s;
 }
 
-#projects .p-card img {
-    width: 20rem;
-    margin-bottom: 2.4rem;
-    border-radius: 2rem;
+#skills .h-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    background-color: var(--purple-light);
+    padding-bottom: 10rem;
+
 }
 
-#projects h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 4rem;
-    margin-top: 2rem;
+#skills p {
+    font-size: 1.6rem;
+    color: var(--purple-color);
 }
+
+#skills h2 {
+    color: var(--purple-color);
+    text-align: center;
+    padding-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+#skills .hs-cards {
+    display: flex;
+    gap: 3.2rem;
+    justify-content: center;
+}
+
+#skills .hs-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    padding: 3.2rem;
+
+    border: 3px solid var(--purple-color);
+    border-radius: 0 3rem 0 3rem;
+
+    background-color: rgba(29, 29, 29, 0);
+
+
+    animation: rainbow 5s infinite alternate;
+}
+
+#skills .hs-card p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--purple-color);
+}
+
+#skills .hs-card img{
+    width: 15rem;
+    margin-bottom: 1.6rem;
+    border-radius: 0 3rem 0 0;
+}
+
+#skills .s-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    padding: 10rem 10rem;
+
+    background: url(../img/skills-bg.gif) no-repeat fixed; 
+    background-color: #472b74;
+    background-image: linear-gradient(rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.5)), url(../img/skills-bg.gif);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 @keyframes leftright {
     0% {
@@ -319,3 +404,12 @@ nav ul {
         border-color: hsl(194, 100%, 50%);
     }
 }
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9256f7, 0 0 20px #9256f7, 0 0 25px #9256f7, 0 0 30px #9256f7, 0 0 35px #9256f7;
+    }
+    100% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9256f7, 0 0 40px #9256f7, 0 0 50px #9256f7, 0 0 60px #9256f7, 0 0 70px #9256f7;
+    }
+  }
