@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/button.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/sword.ico" type="image/x-icon">
     <title>Portfólio</title>
 </head>
@@ -16,7 +17,9 @@
         <header> 
             <nav>
                 <ul>
-                    <a href="#home"><img src="img/logo.png" alt="Logo"></a>
+                    <div class="logo">
+                        <a href="#home"><img src="img/logo.png" alt="Logo"></a>
+                    </div>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about-me">Sobre mim</a></li>
                     <li><a href="#projects">Projetos</a></li>
@@ -31,9 +34,21 @@
             <div class="desc">
                 <h2>Olá, eu sou</h2>
                 <h1><span>&lt;</span>Adriel Kasima <span>/&gt;</span></h1>
-                <h3>Desenvolvedor frontend</h3>
+                    <h3 class="text">
+                        Desenvolvedor frontend
+                    </h3>
+
+                    <button class="btn">
+                        <a href="files/CV_Adriel.pdf" download="">
+                            <span class="btn-content">Baixar CV_</span>
+                            <span class="btn-glitch"></span>
+                            <span class="btn-label">r25</span>
+                        </a>
+
+                    </button>
+
+                    
                 
-                <button><a href="#about-me">Saiba mais</a></button>
             </div>
 
 

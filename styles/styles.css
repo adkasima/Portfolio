@@ -6,14 +6,20 @@
 
 :root {
     font-size: 62.5%;
-    --c-purple: #9256f7;
-    --c-purple-light: #9f6ff3;
-    --c-gray: rgb(128, 128, 128);
-    --c-gray-light: rgb(219, 207, 207);
+    --purple-color: #9256f7;
+    --purple-light: #9f6ff3;
+
+    --gray-color: rgb(128, 128, 128);
+    --gray-light: rgb(219, 207, 207);
+
+    --yellow-color: #fcee09; 
+    --red-color: #ff003c;
+    --black-color: #050a0e;
+    --blue-color: #00f0ff;
 }
 
 body, html {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Barlow', sans-serif;
     scroll-behavior: smooth;
     
 }
@@ -21,10 +27,12 @@ body, html {
 li, a {
     font-size: 1.6rem;
     font-weight: 400;
-    color: var(--c-gray);
+    color: var(--gray-color);
     transition: 0.5s;
     list-style: none;
     text-decoration: none;
+
+
     
 }
 
@@ -37,11 +45,21 @@ h2 {
 }
 
 span {
-    color: var(--c-purple);
+    color: var(--purple-color);
 }
 
-a:hover {
+nav ul li a:hover {
     color: white;
+
+    text-shadow:
+    0 0 7px var(--purple-color),
+    0 0 10px var(--purple-color),
+    0 0 21px var(--purple-color),
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
 }
 
 .content {
@@ -69,7 +87,6 @@ header img {
 
 }
 
-
 nav ul {
     display: flex;
     gap: 5rem;
@@ -83,10 +100,10 @@ nav ul {
     align-items: center;
     gap: 20rem;
     
-    background: url(img/background.gif) no-repeat fixed; 
-    background-color: #472b74;
+    background: url(../img/background.gif) no-repeat fixed; 
+    background-color: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url(img/background.gif);
+    rgba(0, 0, 0, 0.5)), url(../img/background.gif);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -98,7 +115,7 @@ nav ul {
     text-align: center;
     padding: 2.4rem;
 
-    border-left: 1px solid var(--c-gray);
+    border-left: 1px solid var(--gray-color);
     animation: increase 1s 0.5s backwards;
 
 }
@@ -128,26 +145,8 @@ nav ul {
     animation: rightleft 1s 2s backwards;
     color: white;
 }
+  
 
-
-#home button, #home button a {
-    color: white;
-    background-color: var(--c-purple);
-    border-radius: 2rem;
-    width: 18rem;
-    padding: 1.6rem;
-    border: none;
-    margin-top: 4rem;
-    cursor: pointer;
-    font-size: 1.6rem;
-
-    animation: downtop 1s 2s backwards;
-    transition: 0.5s;
-}
-
-#home button:hover{
-    filter: brightness(1.2);
-}
 
 #about-me {
     padding: 0 10rem;
@@ -156,7 +155,7 @@ nav ul {
 }
 
 #about-me h2 {
-    color: var(--c-purple);
+    color: var(--purple-color);
     text-align: center;
     padding-top: 10rem;
     margin-bottom: 4rem;
@@ -190,10 +189,10 @@ nav ul {
     margin-top: 30rem;
     padding: 10rem 10rem;
 
-    background: url(img/cyberpunk.gif) no-repeat fixed; 
+    background: url(../img/cyberpunk.gif) no-repeat fixed; 
     background-color: #472b74;
     background-image: linear-gradient(rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.5)), url(img/cyberpunk.gif);
+    rgba(0, 0, 0, 0.5)), url(../img/cyberpunk.gif);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -213,10 +212,14 @@ nav ul {
     height: auto;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--c-purple);
+    border: 2px solid var(--purple-color);
+    border-radius: 0 3rem 0 3rem;
+
+    background-color: rgba(106, 30, 116, 0.5);
 
     padding: 1rem;
-    border-radius: 0 3rem 0 3rem;
+
+    animation: rainbow 5s infinite alternate;
 }
 
 #projects .p-card h3 {
@@ -291,5 +294,19 @@ nav ul {
 
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes rainbow {
+    0% {
+        border-color: #7a7a7a;
+    }
+
+    50% {
+        border-color: var(--purple-color)
+    }
+
+    100% {
+        border-color: hsl(194, 100%, 50%);
     }
 }
