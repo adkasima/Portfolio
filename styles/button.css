@@ -1,9 +1,9 @@
 .btn {
-    width: 230px;
-    height: 60px; 
+    width: 20rem;
+    height: 6rem; 
     border: 0;
     outline: none;
-    margin-top: 2rem;
+
     background-color: black;
     cursor: pointer;
     position: relative;
@@ -11,8 +11,19 @@
     text-transform: uppercase;
     clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
 
+  }
+
+  #home .btn {
+    margin-top: 12rem;
     animation: downtop 1s 2.5s backwards;
   }
+
+  .social-links .btn img {
+    margin-right: 1.5rem;
+    width: 2.3rem;
+    
+  }
+
   
   .btn-content {
     display: flex;
@@ -30,12 +41,12 @@
 
   .btn-label {
     height: 10px;
-    font-size: .70rem;
+    font-size: 1rem;
     position: absolute;
-    bottom: -4px;
+    bottom: -1px;
     right: 8%;
     padding: 0 5px;
-    background-color: var(--yellow-color);
+    background-color: white;
     z-index: 3;
   }
 
@@ -58,6 +69,7 @@
     display: block;
     animation: glitch-animation 2s linear 0s infinite;
   }
+
 
   @keyframes glitch-animation {
     0% {
