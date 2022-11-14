@@ -14,7 +14,7 @@
 
     --yellow-color: #fcee09; 
     --red-color: #ff003c;
-    --black-color: #050a0e;
+    --black-color: #1c132c;
     --blue-dark: #05868f;
     --blue-color: #3cc4ce;
 
@@ -30,7 +30,7 @@
 }
 
 .checked {
-    color: red;
+    color: var(--purple-color);
 }
 
 body, html {
@@ -294,8 +294,8 @@ nav ul {
     padding: 10rem 10rem;
 }
 
-#skills .h-skills {
-    background-color: var(--purple-light);
+#skills {
+    background-color: var(--black-color);
 
     -webkit-box-shadow: inset 0px 10px 27px -8px #141414, 3px 33px 37px -30px rgba(0,0,0,0); 
     box-shadow: inset 0px 10px 27px -8px #141414, 3px 33px 37px -30px rgba(0,0,0,0);
@@ -304,7 +304,7 @@ nav ul {
 #skills p {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--purple-color);
+    color: white;
 }
 
 #skills img{
@@ -313,19 +313,13 @@ nav ul {
     border-radius: 0 3rem 0 0;
 }
 
-#skills h2 {
-    color: var(--purple-color);
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-#skills .hs-cards, .ss-cards {
+.p-cards, .hs-cards, .ss-cards {
     display: flex;
     gap: 3.2rem;
     justify-content: center;
 }
 
-#skills .hs-card, .ss-card{
+.pcard, .hs-card, .ss-card{
 
     max-width: 20rem;
     display: flex;
@@ -345,7 +339,14 @@ nav ul {
 }
 
 
-#skills .s-skills {
+#skills  h2 {
+    color: var(--purple-color);
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#contact {
+
     background: url(../img/bg-skills.jpg) no-repeat fixed; 
     background-color: #472b74;
     background-image: linear-gradient(rgba(0, 0, 0, 1),
@@ -354,21 +355,8 @@ nav ul {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
 
-#skills .s-skills h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-#contact {
-    background-color: var(--purple-light);
     padding: 0 10rem;
-
-    -webkit-box-shadow: inset 0px 10px 27px -8px #141414, 3px 33px 37px -30px rgba(0,0,0,0); 
-    box-shadow: inset 0px 10px 27px -8px #141414, 3px 33px 37px -30px rgba(0,0,0,0);
-
     padding-bottom: 10rem;
 
 }
@@ -378,6 +366,10 @@ nav ul {
     text-align: center;
     padding-top: 10rem;
     margin-bottom: 4rem;
+}
+
+label {
+    color: white;
 }
 
 form {
@@ -474,7 +466,7 @@ input, textarea {
 
 
 #footer .end {
-    background-color: var(--gray-color);
+    background-color: var(--black-color);
 }
 
 @media (max-width: 1000px) {
