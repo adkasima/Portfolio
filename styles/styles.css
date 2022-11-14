@@ -510,7 +510,10 @@ input, textarea {
 
 @media (max-width: 700px){
     input, textarea {
-        min-width: 10rem;
+        min-width: 14rem;
+    }
+    form {
+        margin: auto;
     }
 }
 
