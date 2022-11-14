@@ -95,10 +95,21 @@ header img {
 
 nav ul {
     display: flex;
-    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul .wrap{
+    display: flex;
+    gap: 3rem;
+    margin-right: 40rem;
+}
+
+.wrap {
     justify-content: center;
     align-items: center;
 }
+
 
 #home {
     padding: 20rem;
@@ -169,9 +180,9 @@ nav ul {
     margin-bottom: 4rem;
 }
 
-#about-me p {
+p {
     font-size: 1.6rem;
-    color: black;
+    color: white;
 }
 
 .social-links {
@@ -294,7 +305,7 @@ nav ul {
     padding: 10rem 10rem;
 }
 
-#skills {
+#skills, #about-me {
     background-color: var(--black-color);
 
     -webkit-box-shadow: inset 0px 10px 27px -8px #141414, 3px 33px 37px -30px rgba(0,0,0,0); 
