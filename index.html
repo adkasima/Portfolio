@@ -10,23 +10,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/sword.ico" type="image/x-icon">
+    <script src="scripts.js" defer></script>
     <title>Portfólio</title>
 </head>
 <body>
     <div class="content">
         <header> 
             <nav>
-                <ul>
+
+                <div class="logo">
                     <a href="#home"><img src="img/logo.png" alt="Logo"></a>
-                    <div class="wrap">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about-me">Sobre</a></li>
-                        <li><a href="#projects">Projetos</a></li>
-                        <li><a href="#skills">Habilidades</a></li>
-                        <li><a href="#contact">Contato</a></li>
+                </div>
+
+                    <div class="desktop-menu">
+                        <ul>
+                            <div class="wrap">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about-me">Sobre</a></li>
+                                <li><a href="#projects">Projetos</a></li>
+                                <li><a href="#skills">Habilidades</a></li>
+                                <li><a href="#contact">Contato</a></li>
+                            </div>
+        
+                        </ul>
                     </div>
 
-                </ul>
+                    <div class="mobile-menu hide">
+                        <ul>
+                            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                            <li><a href="#about-me" onclick="closeMenu()">Sobre</a></li>
+                            <li><a href="#projects" onclick="closeMenu()">Projetos</a></li>
+                            <li><a href="#skills" onclick="closeMenu()">Habilidades</a></li>
+                            <li><a href="#contact" onclick="closeMenu()">Contato</a></li>
+                        </ul>
+                    </div>
+
+                <div class="btn-open-menu" onclick="openMenu()">
+                    <a href=""><img src="img/open-menu-icon.svg" alt=""></a>
+                </div>
+
+                <div class="btn-close-menu hide" onclick="closeMenu()">
+                    <a href=""><img src="img/close-menu-icon.svg" alt=""></a>
+                </div>
+
+
+
             </nav>
         </header>
         

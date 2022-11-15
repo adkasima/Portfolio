@@ -183,14 +183,3 @@
       opacity: 1;
     }
   }
-
-@media (max-width: 500px){
-  .btn-content {
-    padding: 0 5rem;
-    font-size: 1.2rem;
-  }
-
-  .btn img {
-    width: .1rem;
-  }
-}

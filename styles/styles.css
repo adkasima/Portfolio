@@ -25,6 +25,49 @@
     -webkit-text-size-adjust: 100%;
 }
 
+.hide {
+    opacity: 0;
+    display: none;
+    visibility: hidden;
+}
+
+.show {
+    opacity: 1;
+    display: block;
+}
+
+.mobile-menu {
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    background-color: var(--black-color);
+
+}
+
+.mobile-menu ul{
+    font-size: 1.8rem;
+    padding: 15rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+      
+}
+
+
+.btn-open-menu, .btn-close-menu {
+    position: absolute;
+    right: 4rem;
+}
+
+.btn-open-menu img, .btn-close-menu img {
+    width: 3rem;
+}
+
 .fa-star {
     color: rgb(43, 43, 43);
 }
@@ -69,7 +112,7 @@ a:hover {
 }
 
 .content {
-    width: auto;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
 
@@ -80,7 +123,6 @@ header {
     height: 8rem;
     position: fixed;
     background-color: rgb(0, 0, 0);
-    position: fixed;
     padding: 2rem;
     z-index: 1;
     
@@ -88,14 +130,24 @@ header {
 box-shadow: 0px 1px 50px 3px rgba(146,86,247,0.85);
 }
 
-header img {
+.logo img {
     width: 10rem;
 
 }
 
-nav ul {
+.logo {
+    z-index: 1;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-;
     align-items: center;
 }
 
@@ -441,7 +493,7 @@ input, textarea {
     
 }
 
-.menu {
+#footer .menu {
     justify-content: center;
     text-align: center;
 }
@@ -519,11 +571,26 @@ input, textarea {
     form {
         margin: auto;
     }
+    .social-links .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+    .desktop-menu {
+        visibility: hidden;
+    }
+
+    .btn-open-menu img {
+        visibility: visible;
+    }
 }
 
-
-
-
+@media (min-width: 701px){
+    .btn-open-menu img {
+        visibility: hidden;
+    }
+}
 
 @keyframes leftright {
     0% {
