@@ -84,24 +84,28 @@
             <div class="content">
                 <h2>Sobre mim {</h2>
             <p>
-                Olá novamente, meu nome é Adriel, tenho 20 anos e moro no interior de São Paulo (SP). No meu tempo livre gosto de jogar, ir na academia, ouvir música, e sair com amigos de vez em quando.
-                <br>
-                Desde pequeno, sempre gostei de jogar vídeo-game, quando ganhei meu primeiro computador, comecei a me interessar ainda mais por tecnologia, até que resolvi tentar levar isso como profissão. Em 2020 me formei como técnico em informática para internet, na instituição de ensino Etec Fernando Prestes. Atualmente estou cursando o 4° semestre de análise e desenvolvimento de sistemas na Fatec Sorocaba.
-                <br>
-                <br>
-                Estou buscando uma oportunidade de estágio na área de desenvolvimento web, com  ênfase na parte de frontend. Futuramente, também desejo me aprofundar em backend ou até mesmo mobile. 
-                <br>
-                Adoro aprender e ensinar coisas novas, espero encontrar um ambiente de trabalho inclusivo e respeitoso, na qual eu possa desenvolver minhas competências, evoluir como profissional e pessoa e também, possa trocar experiências com outros devs e com outras áreas de conhecimento.
-                <br>
-                <br>
-                Tenho inglês nível intermediário, conhecimentos em HTML, CSS e SQL.
-                <br>
-                Por enquanto estou estudando ReactJS, NodeJS e JavaScript, também já tive um breve contato com outras tecnologias, tais como Python, Java, C, C# (.Net), TypeScript e TailwindCSS. 
-                <br>
-                Também já criei alguns protótipos utilizando o Figma e tenho uma pequena noção de metodologias ágeis (Scrum) e versionamento de código.
-                <br>
-                
+                Olá novamente, meu nome é Adriel, tenho 20 anos e moro no interior de São Paulo (SP). No meu tempo livre gosto de jogar, ir na academia, ouvir música, e sair com amigos de vez em quando <span id="points">...</span>
+                <span id="more">
+                    <br>
+                    Desde pequeno, sempre gostei de jogar vídeo-game, quando ganhei meu primeiro computador, comecei a me interessar ainda mais por tecnologia, até que resolvi tentar levar isso como profissão. Em 2020 me formei como técnico em informática para internet, na instituição de ensino Etec Fernando Prestes. Atualmente estou cursando o 4° semestre de análise e desenvolvimento de sistemas na Fatec Sorocaba.
+                    <br>
+                    <br>
+                    Estou buscando uma oportunidade de estágio na área de desenvolvimento web, com  ênfase na parte de frontend. Futuramente, também desejo me aprofundar em backend ou até mesmo mobile. 
+                    <br>
+                    Adoro aprender e ensinar coisas novas, espero encontrar um ambiente de trabalho inclusivo e respeitoso, na qual eu possa desenvolver minhas competências, evoluir como profissional e pessoa e também, possa trocar experiências com outros devs e com outras áreas de conhecimento.
+                    <br>
+                    <br>
+                    Tenho inglês nível intermediário, conhecimentos em HTML, CSS e SQL.
+                    <br>
+                    Por enquanto estou estudando ReactJS, NodeJS e JavaScript, também já tive um breve contato com outras tecnologias, tais como Python, Java, C, C# (.Net), TypeScript e TailwindCSS. 
+                    <br>
+                    Também já criei alguns protótipos utilizando o Figma e tenho uma pequena noção de metodologias ágeis (Scrum) e versionamento de código.
+                    <br>
+                    
             </p>
+                </span>
+                <a onclick="readMore()" id="btnReadMore">Ler mais</a>
+
 
                 <div class="social-links">
                     <h2>Redes sociais {</h2>
@@ -139,7 +143,7 @@
                                 </a>
                             </button>
 
-                            <!-- <button class="btn">
+                            <button class="btn">
                                 <a href="mailto:adrielkasima@gmail.com" target="_blank">
                                     <span class="btn-content">
                                         <img src="https://cdn-icons-png.flaticon.com/512/104/104069.png" alt="Logo Gmail">
@@ -148,7 +152,7 @@
                                     <span class="btn-glitch"></span>
                                     <span class="btn-label">r25</span>
                                 </a>
-                            </button> -->
+                            </button>
                         </div>
                 </div>
 
@@ -161,7 +165,6 @@
 
         <section id="projects">
             <h2>Meus projetos {</h2>
-
             <div class="p-cards">
                 <div class="p-card">
                     <img src="img/projects/ig-lab.png" alt="Imagem do projeto Ignite-lab">
@@ -192,7 +195,11 @@
                 </div>
             </div>
 
+            
+
             <div class="p-cards">
+
+
                 <div class="p-card">
                     <img src="img/projects/clock.png" alt="Imagem do projeto Focus timer Pomodoro">
                     <h3>Focus timer - Pomodoro</h3>
@@ -208,6 +215,7 @@
                 </div>
 
             </div>
+
         </section>
 
         <section id="skills">

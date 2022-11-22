@@ -168,11 +168,8 @@ nav ul .wrap{
     display: flex;
     align-items: center;
     gap: 20rem;
-    
-    background: url(../img/background.gif) no-repeat fixed; 
-    background-color: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.5)), url(../img/background.gif);
+    rgba(0, 0, 0, 0.5)), url(../img/home-bg.gif);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -225,6 +222,10 @@ nav ul .wrap{
 
 }
 
+#about-me #more {
+    display: none;
+}
+
 #about-me h2 {
     color: var(--purple-color);
     text-align: center;
@@ -232,10 +233,14 @@ nav ul .wrap{
     margin-bottom: 4rem;
 }
 
-p {
+p, #about-me span {
     line-height: 2.5rem;
     font-size: 1.8rem;
     color: white;
+}
+
+#about-me a {
+    cursor: pointer;
 }
 
 .social-links {
@@ -278,8 +283,6 @@ p {
     align-items: center;
     padding: 10rem 10rem;
 
-    background: url(../img/bg-projects.jpg) no-repeat fixed; 
-    background-color: #472b74;
     background-image: linear-gradient(rgba(0, 0, 0, 1),
     rgba(0, 0, 0, 0.5)), url(../img/bg-projects.jpg);
     -webkit-background-size: cover;
@@ -411,10 +414,8 @@ p {
 
 #contact {
 
-    background: url(../img/bg-skills.jpg) no-repeat fixed; 
-    background-color: #472b74;
     background-image: linear-gradient(rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.5)), url(../img/bg-skills.jpg);
+    rgba(0, 0, 0, 0.5)), url(../img/bg-contact.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
