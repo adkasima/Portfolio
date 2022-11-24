@@ -18,15 +18,15 @@ function readMore(){
     }
 }
 
+btnReadMore.addEventListener('click', (e) => {
+    e.preventDefault();
+});
+
 btnOpenMenu.addEventListener('click', (e) => {
     e.preventDefault();
 });
 
 btnCloseMenu.addEventListener('click', (e) => {
-    e.preventDefault();
-});
-
-btnReadMore.addEventListener('click', (e) => {
     e.preventDefault();
 });
 
