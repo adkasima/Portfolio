@@ -94,7 +94,7 @@ li, a {
 }
 
 h1 {
-    font-size: 3.2rem;
+    font-size: 3.6rem;
 }
 
 h2 {
@@ -107,13 +107,12 @@ span {
 
 a:hover {
     color: #fff;
-      animation: glow 2s ease-in-out infinite alternate;
-      transition: 0.5s;
+    animation: glow 2s ease-in-out infinite alternate;
+    transition: 0.5s;
 }
 
 .content {
     width: 100%;
-    margin: 0 auto;
     overflow: hidden;
 
 }
@@ -147,7 +146,6 @@ nav {
 
 nav ul {
     display: flex;
-    justify-content: space-;
     align-items: center;
 }
 
@@ -233,7 +231,7 @@ nav ul .wrap{
     margin-bottom: 4rem;
 }
 
-p, #about-me span {
+p, #about-me #more {
     line-height: 2.5rem;
     font-size: 1.8rem;
     color: white;

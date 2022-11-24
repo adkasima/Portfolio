@@ -20,12 +20,12 @@
 
   .social-links .btn img {
     margin-right: 1rem;
-    width: 2.3rem;
+    width: 2rem;
     
   }
   
   .btn-content {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,11 +41,10 @@
 
   .btn-label {
     height: 10px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     position: absolute;
     bottom: -1px;
     right: 8%;
-    padding: 0 5px;
     background-color: white;
     z-index: 3;
   }
@@ -53,6 +52,7 @@
   .btn-glitch {
     display: none;
     position: absolute;
+
     top: 0;
     left: 0;
     width: 100%;
