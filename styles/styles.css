@@ -2,10 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 :root {
     font-size: 62.5%;
+    --hue: 290;
     --purple-color: #9256f7;
     --purple-light: #e4bcf7;
 
@@ -15,6 +21,8 @@
     --yellow-color: #fcee09; 
     --red-color: #ff003c;
     --black-color: #1c132c;
+    /* --black-color: rgba(var(--hue), 19, 44, 1); */
+    --hue-bg: 
     --blue-dark: #05868f;
     --blue-color: #3cc4ce;
 
@@ -93,10 +101,6 @@ li, a {
     
 }
 
-h1 {
-    font-size: 3.6rem;
-}
-
 h2 {
     font-size: 2.4rem;
 }
@@ -149,15 +153,10 @@ nav ul {
     align-items: center;
 }
 
-nav ul .wrap{
+.wrap {
     display: flex;
     gap: 3rem;
     margin-right: 40rem;
-}
-
-.wrap {
-    justify-content: center;
-    align-items: center;
 }
 
 
@@ -165,23 +164,24 @@ nav ul .wrap{
     padding: 20rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.5)), url(../img/home-bg.gif);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
     
 }
 
 #home .desc {
     text-align: center;
     padding: 2.4rem;
-
-    border-left: 1px solid var(--gray-color);
     animation: increase 1s 0.5s backwards;
 
+}
+
+.line {
+    height: 40rem;
+    border: 1px solid var(--gray-color);
 }
 
 
@@ -192,6 +192,7 @@ nav ul .wrap{
 }
 
 #home h1 {
+    font-size: 4rem;
     animation: leftright 1s 1.5s backwards;
     color: white;
 }
@@ -283,10 +284,6 @@ p, #about-me #more {
 
     background-image: linear-gradient(rgba(0, 0, 0, 1),
     rgba(0, 0, 0, 0.5)), url(../img/bg-projects.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
 }
 
@@ -414,10 +411,6 @@ p, #about-me #more {
 
     background-image: linear-gradient(rgba(0, 0, 0, 1),
     rgba(0, 0, 0, 0.5)), url(../img/bg-contact.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 
     padding: 0 10rem;
     padding-bottom: 10rem;
@@ -532,12 +525,6 @@ input, textarea {
     background-color: var(--black-color);
 }
 
-@media (max-width: 1000px) {
-    #home img {
-        width: 14rem;
-    }
-
-}
 
 @media (max-width: 900px) {
     nav ul {
@@ -551,10 +538,11 @@ input, textarea {
         flex-direction: column;
     }
 
-    #home .desc {
-        border-left: none;
-        border-top: 1px solid var(--gray-color);
+    .line {
+        width: 30rem;
+        height: 0;
     }
+
 
     .p-cards, .hs-cards, .ss-cards {
         display: flex;
@@ -591,74 +579,3 @@ input, textarea {
     }
 }
 
-@keyframes leftright {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes rightleft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes downtop {
-    0% {
-        opacity: 0;
-        transform: translateY(45px);
-    }
-    
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes increase {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes rainbow {
-    0% {
-        border-color: var(--red-color)
-    }
-
-    50% {
-        border-color: var(--purple-color)
-    }
-
-    100% {
-        border-color: var(--blue-color)
-    }
-}
-
-@keyframes glow {
-    0% {
-      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #9256f7, 0 0 20px #9256f7, 0 0 25px #9256f7, 0 0 30px #9256f7, 0 0 35px #9256f7;
-    }
-    50% {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #9256f7, 0 0 40px #9256f7, 0 0 50px #9256f7, 0 0 60px #9256f7, 0 0 70px #9256f7;
-    }
-    100% {
-        text-shadow: 0 0 15px #fff, 0 0 30px #fff, 0 0 45px #9256f7, 0 0 60px #9256f7, 0 0 75px #9256f7, 0 0 90px #9256f7, 0 0 105px #9256f7;
-      }
-  }
