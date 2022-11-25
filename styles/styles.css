@@ -169,7 +169,7 @@ nav ul {
     justify-content: center;
     gap: 20rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),
-    rgba(0, 0, 0, 0.5)), url(../img/bg-home.jpg);
+    rgba(0, 0, 0, 0.5)), url(../img/bg-home.avif);
 
     
 }
@@ -285,7 +285,7 @@ p, #about-me #more {
     padding: 10rem 10rem;
 
     background-image: linear-gradient(rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.5)), url(../img/bg-projects.jpg);
+    rgba(0, 0, 0, 0.5)), url(../img/bg-projects.avif);
 
 }
 
@@ -412,7 +412,7 @@ p, #about-me #more {
 #contact {
 
     background-image: linear-gradient(rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.5)), url(../img/bg-contact.jpg);
+    rgba(0, 0, 0, 0.5)), url(../img/bg-contact.avif);
 
     padding: 0 10rem;
     padding-bottom: 10rem;
