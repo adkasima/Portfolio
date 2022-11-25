@@ -163,7 +163,7 @@ nav ul {
 
 
 #home {
-    padding: 20rem;
+    padding: 15rem 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,13 +194,13 @@ nav ul {
 }
 
 #home h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     animation: leftright 1s 1.5s backwards;
     color: white;
 }
 
 #home h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: 400;
     animation: rightleft 1s 1s backwards;
     color: white;
