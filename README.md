@@ -1,7 +1,8 @@
 <h1 align="center"> Meu Portfólio </h1>
 
 <p align="center">
-Portfólio em desenvolvimento
+Portfólio para projetos pessoais
+Tema: Cyberpunk
 </p>
 
 <p align="center">
