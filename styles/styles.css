@@ -78,14 +78,6 @@
     width: 3rem;
 }
 
-.fa-star {
-    color: rgb(43, 43, 43);
-}
-
-.checked {
-    color: var(--purple-color);
-}
-
 body, html {
     font-family: 'Barlow', sans-serif;
     scroll-behavior: smooth;
